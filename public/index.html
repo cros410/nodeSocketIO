@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <title>Chat privado</title>
+   <script src="/socket.io/socket.io.js"></script>
+   <script src="main.js"></script> 
+  </head>
+  <body>
+    <h1>Test sockets io :</h1>
+    <div id="mensajes"></div>
+    <br>
+    <form onsubmit="return addMenssage(this)">
+        <input type="texto" id="username" placeholder="nombre">
+        <input type="texto" id="texto" placeholder="mensaje">
+        <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
