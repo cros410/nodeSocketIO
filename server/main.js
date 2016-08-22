@@ -5,11 +5,7 @@ var io = require('socket.io')(server);
 
 app.use(express.static("public"));
 
-var message = [{
-        id : 1,
-        text : "Es un mensaje",
-        author : "Christian Valencia"
-}];
+var message = [];
 
 app.get("/", function (req , res) {
     res.status(200).render("index.html");
